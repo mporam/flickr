@@ -1,0 +1,105 @@
+.container {
+  max-width: 1000px;
+  min-width: 400px;
+  width: 90%;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+.container .content {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+}
+.container .content.opened {
+  overflow: visible;
+}
+.container .content .items {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.container .content .photo-info {
+  position: absolute;
+  top: 0;
+}
+.container a {
+  color: #0069A6;
+}
+.item {
+  overflow: auto;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  border-top: 1px solid #FF0084;
+}
+.item:first-child {
+  border-top: 0;
+}
+.item.hidden {
+  display: none;
+}
+.item div {
+  max-width: 600px;
+}
+.item div h3 {
+  margin: 5px	0;
+  font-weight: normal;
+  height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.item div p {
+  margin: 5px 0;
+}
+.item div > a {
+  margin-right: 15px;
+}
+.image {
+  width: 150px;
+  height: 95px;
+  overflow: hidden;
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+.image img {
+  width: 150px;
+  min-height: 95px;
+}
+.photo-info {
+  width: 100%;
+}
+.photo-info h2 {
+  display: inline;
+}
+.photo-info .btn-back {
+  float: right;
+  background: url('../img/back-btn.gif') top left no-repeat;
+  color: #ffffff;
+  width: 60px;
+  height: 28px;
+  padding: 7px 0 0 40px;
+  text-decoration: none;
+}
+.photo-info .info {
+  padding-left: 170px;
+}
+.photo-info .info ul {
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  overflow: auto;
+}
+.photo-info .info ul li {
+  font-weight: bold;
+  float: left;
+  margin-right: 15px;
+}
+.photo-info .info ul li a {
+  font-weight: normal;
+}

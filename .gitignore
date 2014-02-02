@@ -13,7 +13,7 @@ tmp/
 *~.nib
 local.properties
 .classpath
-.settings/
+.settings
 .loadpath
 
 # External tool builders
@@ -46,7 +46,6 @@ local.properties
 [Dd]ebug/
 [Rr]elease/
 x64/
-build/
 [Bb]in/
 [Oo]bj/
 
